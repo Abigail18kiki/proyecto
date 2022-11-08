@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.bg {
+  background-color: black;
+}
+
+.navbar {
+  background-color: black;
+}
+
+a {
+  color: #fff !important;
+}
+
+.nav-item {
+  font-family: 'Abril Fatface';
+  padding: 1px 30px;
+  text-align: center;
+}
+
+.nav-item a {
+  color: #FFF;
+  text-decoration: none;
+  font: 22px 'Abril Fatface';
+  position: relative;
+}
+
+
+/* Top & Bottom Borders Out */
+.topBotomBordersOut a:before,
+.topBotomBordersOut a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FFF;
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.topBotomBordersOut a:before {
+  top: 0px;
+  transform: translateY(10px);
+}
+
+.topBotomBordersOut a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+
+.topBotomBordersOut a:hover:before,
+.topBotomBordersOut a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}

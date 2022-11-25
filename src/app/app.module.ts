@@ -10,13 +10,15 @@ import { EquipoComponent } from './pages/equipo/equipo.component';
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    EquipoComponent
+    EquipoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

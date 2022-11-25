@@ -1,10 +1,8 @@
-.container {
-    margin-top: 50px;
-    margin-bottom: 80px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
-.bg {
-    margin-top: 100px;
+.container {
+    margin-top: 20px;
+    margin-bottom: 80px;
 }
 
 /* cards */
@@ -26,7 +24,8 @@
     perspective: 1000px;
     font-family: sans-serif;
     margin-left: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .col-md-5 {
@@ -89,4 +88,20 @@ section {
     rgb(255, 161, 0) 40%, rgb(255, 161, 0) 48%);
     color: white;
     transform: rotateY(180deg);
+}
+
+/* titulos */
+.section-title-lider {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 150px;
 }

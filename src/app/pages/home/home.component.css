@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+
+.info {
+    padding: 3px 100px;
+    margin-left: 100px;
+    margin-right: 70px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+}
+
+.header {
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 90px;
+    margin-bottom: 80px;
+}
+
+/*
+.estadisticas {
+    overflow: hidden;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    width: 400px;
+}
+*/
+.content {
+    margin-top: 150px;
+}

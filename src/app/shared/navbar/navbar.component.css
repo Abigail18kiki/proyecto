@@ -26,6 +26,10 @@ a {
   position: relative;
 }
 
+.icono-sesion:hover{
+  color: #FFA100 !important;
+}
+
 
 /* Top & Bottom Borders Out */
 .topBotomBordersOut a:before,

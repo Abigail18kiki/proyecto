@@ -1,0 +1,23 @@
+.colegio{
+    padding: 40px 100px;
+    height: 300px;
+    width: 100%;
+}
+.inicio{
+    padding: 3px 100px;
+}
+.estadisticas{
+    overflow: hidden;
+    transition: all 50ms ease;
+    float: right;
+    transition: all 50ms ease;
+    margin-left: 10px;
+}
+.estadisticas:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+p{
+    font-size: 17.6px;
+    text-align: justify;
+}

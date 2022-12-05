@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 //components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { EquipoComponent } from './pages/equipo/equipo.component';
@@ -27,6 +28,9 @@ import { AngularFireStorage } from '@angular/fire/compat/storage'
 import { environment } from 'src/environments/environment';
 
 
+import { PagesModule } from './pages/pages.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,12 +48,20 @@ import { environment } from 'src/environments/environment';
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     BrowserAnimationsModule,
     MaterialModule,
+<<<<<<< HEAD
     MatIconModule,
     //importar configuracion de firebase
     AngularFireModule.initializeApp(environment.firebaseConfig),
     
+=======
+    MatIconModule
+
+    PagesModule
+
+>>>>>>> dd6fe43b5f575af20fc820287c0af6fcc1086dc3
   ],
   providers: [],
   bootstrap: [AppComponent]

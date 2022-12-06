@@ -20,7 +20,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { PagesModule } from './pages/pages.module';
 import { PrimeModule } from './prime/prime.module';
 import { PasswordModule } from 'primeng/password';
-import { InputTextModule } from 'primeng/inputtext';
 import { CookieService } from 'ngx-cookie-service';
 import { LoginService } from './login.service';
 
@@ -29,8 +28,6 @@ import { LoginService } from './login.service';
 import { AngularFireModule } from '@angular/fire/compat'
 import { AngularFireAuthModule } from '@angular/fire/compat/auth'
 import { environment } from 'src/environments/environment';
-
-
 
 
 @NgModule({
@@ -57,9 +54,7 @@ import { environment } from 'src/environments/environment';
     ReactiveFormsModule,
     //importar configuracion de firebase
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    InputTextModule,
-    AngularFireAuthModule
-  ],
+],
   providers: [CookieService, CookieService],
   bootstrap: [AppComponent,LoginService]
 })

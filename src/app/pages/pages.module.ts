@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
-import { PrimeModule } from '../prime/prime.module';
+
 
 @NgModule({
   declarations: [
+    NosotrosComponent
   ],
   imports: [
-    CommonModule,
-    PrimeModule
+    CommonModule
   ],
   exports:[
+    NosotrosComponent
   ]
 })
 export class PagesModule { }

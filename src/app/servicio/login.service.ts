@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/compat/firestore';
-import { Usuarios } from './usuarios';
+import { Usuarios } from '../usuarios';
 import { map } from 'rxjs/operators'
 import { FormGroup, NgForm } from '@angular/forms';
 import { CookieService } from 'ngx-cookie-service';

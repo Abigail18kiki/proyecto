@@ -9,17 +9,20 @@
                                 <div class="center-wrap">
                                     <div class="section text-center">
                                         <h4 class="mb-4 pb-3">Iniciar Sesión</h4>
-                                        <form [formGroup]="datosUser"></form>
-                                        <div class="form-group">
-                                            <div class="form-group mt-2">
-                                                <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-                                                <i class="input-icon uil uil-at"></i>
+                                        <form [formGroup]="datosUser">
+                                            <div class="form-group">
+                                                <div class="form-group mt-2">
+                                                    <input type="email" name="logemail" class="form-style"
+                                                        placeholder="Your Email" id="logemail" autocomplete="off">
+                                                    <i class="input-icon uil uil-at"></i>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-                                            <i class="input-icon uil uil-lock-alt"></i>
-                                        </div>
+                                            <div class="form-group mt-2">
+                                                <input type="password" name="logpass" class="form-style"
+                                                    placeholder="Your Password" id="logpass" autocomplete="off">
+                                                <i class="input-icon uil uil-lock-alt"></i>
+                                            </div>
+                                        </form>
                                         <a href="#" class="btn mt-4" (click)="iniciaSesion()">Aceptar</a>
                                     </div>
                                 </div>

@@ -12,6 +12,7 @@ import { EquipoComponent } from './pages/equipo/equipo.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AdminComponent } from './pages/admin/admin.component';
+import { CrearEmpleadoComponent } from './components/crear-empleado/crear-empleado.component';
 
 //modules
 import { MaterialModule } from './material/material.module';
@@ -21,12 +22,12 @@ import { PagesModule } from './pages/pages.module';
 import { PrimeModule } from './prime/prime.module';
 import { PasswordModule } from 'primeng/password';
 import { CookieService } from 'ngx-cookie-service';
-import { LoginService } from './login.service';
+import { LoginService } from './servicio/login.service';
 
 //firebase
 //se conecta con firestore
 import { AngularFireModule } from '@angular/fire/compat'
-import { AngularFireAuthModule } from '@angular/fire/compat/auth'
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from 'src/environments/environment';
 
 
@@ -38,7 +39,8 @@ import { environment } from 'src/environments/environment';
     EquipoComponent,
     HomeComponent,
     LoginComponent,
-    AdminComponent
+    AdminComponent,
+    CrearEmpleadoComponent
   ],
   // todos los modulos se declaran en imports
   imports: [
@@ -52,8 +54,9 @@ import { environment } from 'src/environments/environment';
     PagesModule,
     PrimeModule,
     ReactiveFormsModule,
+    AngularFirestoreModule,
     //importar configuracion de firebase
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebase),
 ],
   providers: [CookieService, CookieService],
   bootstrap: [AppComponent,LoginService]

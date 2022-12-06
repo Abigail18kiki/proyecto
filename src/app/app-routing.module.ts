@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'equipo', component: EquipoComponent },
   { path: 'iniciar-sesion', component: LoginComponent },
   { path: 'admin', component: AdminComponent },
+  { path: 'agregar-empleado', component: CrearEmpleadoComponent },
   { path: 'crear-empleado', component: CrearEmpleadoComponent },
   { path: 'login', component: LoginComponent },
   { path: '**', component: HomeComponent },
